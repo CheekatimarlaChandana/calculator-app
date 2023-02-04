@@ -1,0 +1,54 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR APP</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    
+   <div class="container">
+    <h1>Calculator</h1>
+
+    <div class="calculator">
+        <input type="text" name="screen" id="screen">
+        <table>
+            <tr>
+                <td><button id="clear" onclick="clearscreen()">C</button></td>
+                <td> <button id="backspace" onclick="backspace()">CE</button></td>
+                <td><button onclick="addToscreen('/')">/</button></td>
+                <td><button  onclick="addToscreen('%')">%</button></td>
+                
+            </tr>
+            <tr>
+                <td><button onclick="addToscreen(7)">7</button></td>
+                <td><button onclick="addToscreen(8)">8</button></td>
+                <td><button onclick="addToscreen(9)">9</button></td>
+                <td><button onclick="addToscreen('*')">X</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="addToscreen(4)">4</button></td>
+                <td><button onclick="addToscreen(5)">5</button></td>
+                <td><button onclick="addToscreen(6)">6</button></td>
+                <td><button onclick="addToscreen('-')">-</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="addToscreen(1)">1</button></td>
+                <td><button onclick="addToscreen(2)">2</button></td>
+                <td><button onclick="addToscreen(3)">3</button></td>
+                <td><button onclick="addToscreen('+')">+</button></td>
+            </tr>
+            <tr>
+                <td><button onclick="addToscreen(0)">0</button></td>
+                <td><button onclick="addToscreen('.')">.</button></td>
+                <td><button  onclick="addToScreen('^')">^</button></td>
+                <td><button onclick="calculate()">=</button></td>
+            </tr>
+        </table>
+    </div>
+</div> 
+    <script src="./calculation.js"></script>
+</body>
+</html>
